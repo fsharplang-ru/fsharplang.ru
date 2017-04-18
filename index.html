@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/additional.css" />
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid content-width">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/min_logo.png" class="inline-block logo" />
+            F# Russian Community
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                Community <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://gitter.im/fsharplang_ru/Lobby" target="_blank">Gitter</a></li>
+                <li><a href="https://t.me/fsharp_chat" target="_blank">Telegram</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://fsharp.org/learn.html" target="_blank">Lessons</a>
+            </li>
+            <li>
+              <a href="http://fsharp.org/" target="_blank">Foundation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="front-bgr">
+      <div class="jumbotron content-width container">
+        <div class="light row">
+          <div class="col-sm-8 shadowed">
+            <h1>
+              Functional-first cross-platform programming language
+            </h1>
+            <p>
+              F# is a mature, open source, cross-platform, functional-first programming language.
+            </p>
+            <p>
+              <a class="btn btn-primary btn-lg">Learn more about F#</a>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/anime.png" width="245px" style="margin-bottom: -48px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container content-width">
+      <div class="floating-logo">
+        <img src="img/fsharp256.png" />
+      </div>
+    </div>
+    <div class="dark-background">
+      <div class="container content-width">
+        <h1 class="light margin-top">
+        Why use F#?
+        </h1>
+        <div class="row margin-top">
+          <div class="col-sm-3 text-center">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <i class="fa fa-television icon-image" aria-hidden="true"></i>
+              </div>
+              <div class="panel-footer text-left">
+                <p class="b">Cross-platform</p>
+                F# runs on Linux, Mac OS X, Android, iOS, Windows, GPUs, and browsers.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <i class="fa fa-github-alt icon-image" aria-hidden="true"></i>
+              </div>
+              <div class="panel-footer text-left">
+                <p class="b">Open-source</p>
+                It is free to use and is open source under an OSI-approved license.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <i class="fa fa-user-secret icon-image" aria-hidden="true"></i>
+              </div>
+              <div class="panel-footer text-left">
+                <p class="b">Active development</p>
+                F# is supported by both an active open community and industry-leading companies providing professional tools.
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <i class="fa fa-fighter-jet icon-image" aria-hidden="true"></i>
+              </div>
+              <div class="panel-footer text-left">
+                <p class="b">Write less - do more</p>
+                Choose F# and greatly increase your productivity!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container content-width">
+        <h1 class="margin-top">
+        What does it look like?
+        </h1>
+        <pre class="margin-top">
+          <code class="fsharp code-holder">// Gets factorial
+let rec fib n a b =
+match n with
+| 0 -> a
+| 1 -> b
+| _ -> fib (n - 1) b (a + b)</code></pre>
+      </div>
+    </div>
+  </body>
+</html>

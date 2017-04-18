@@ -1,0 +1,65 @@
+.content-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.inline-block {
+  display: inline-block!important;
+}
+.logo {
+  margin-top: -12px;
+  margin-bottom: -6px;
+  margin-right: 6px;
+  width: 42px;
+  height: 42px;
+}
+.front-bgr {
+  background: #378bba;
+  background-size: cover;
+}
+.front-bgr .shadowed {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2), -1px 2px 1px rgba(0,0,0,.2)
+}
+.light {
+  color: white;
+}
+.floating-logo {
+  text-align: center;
+  margin-top: -130px;
+  margin-bottom: -110px;
+}
+.floating-logo img {
+  width: 220px;
+  height: 220px;
+}
+.code {
+  text-shadow: none!important;
+}
+.code-holder {
+  border-radius: 3px;
+  font-size: 16px;
+}
+.dark-background {
+  background-color: #2d3947
+}
+.text-center {
+  text-align: center;
+  line-height: 1.5em;
+}
+.text-left {
+  text-align: left;
+  line-height: 1.5em;
+}
+.icon-image {
+  margin: 20px;
+  font-size: 90px;
+}
+.margin-top {
+  margin-top: 31px;
+}
+.b {
+  font-weight: bold;
+  margin-top: 3px;
+}
+code {
+  margin-top: -20px;
+}
