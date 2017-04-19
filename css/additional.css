@@ -24,12 +24,14 @@
 }
 .floating-logo {
   text-align: center;
-  margin-top: -130px;
-  margin-bottom: -110px;
 }
 .floating-logo img {
-  width: 220px;
-  height: 220px;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 .code {
   text-shadow: none!important;
@@ -51,7 +53,7 @@
 }
 .icon-image {
   margin: 20px;
-  font-size: 90px;
+  font-size: 80px;
 }
 .margin-top {
   margin-top: 31px;
@@ -59,6 +61,14 @@
 .b {
   font-weight: bold;
   margin-top: 3px;
+}
+.managed-code-block, .managed-code-block code {
+  font-size: 40px;
+  border: none;
+  background: transparent!important;
+}
+.margin-bottom {
+  margin-bottom: 21px;
 }
 code {
   margin-top: -20px;

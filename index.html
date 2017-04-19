@@ -17,21 +17,21 @@
       <div class="container-fluid content-width">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Переключить навигацию</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
             <img src="img/min_logo.png" class="inline-block logo" />
-            F# Russian Community
+            Русскоязычное сообщество F#
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                Community <span class="caret"></span>
+                Сообщество <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="https://gitter.im/fsharplang_ru/Lobby" target="_blank">Gitter</a></li>
@@ -39,10 +39,10 @@
               </ul>
             </li>
             <li>
-              <a href="http://fsharp.org/learn.html" target="_blank">Lessons</a>
+              <a href="http://fsharp.org/learn.html" target="_blank">Уроки</a>
             </li>
             <li>
-              <a href="http://fsharp.org/" target="_blank">Foundation</a>
+              <a href="http://fsharp.org/" target="_blank">Разработка</a>
             </li>
           </ul>
         </div>
@@ -51,19 +51,19 @@
     <div class="front-bgr">
       <div class="jumbotron content-width container">
         <div class="light row">
-          <div class="col-sm-8 shadowed">
+          <div class="col-sm-7 shadowed">
             <h1>
-              Functional-first cross-platform programming language
+              Функциональный кроссплатформенный язык программирования
             </h1>
             <p>
-              F# is a mature, open source, cross-platform, functional-first programming language.
+              F# позволяет разработчикам решать сложные задачи с помощью простого и поддерживаемого кода.
             </p>
             <p>
-              <a class="btn btn-primary btn-lg">Learn more about F#</a>
+              <a class="btn btn-primary btn-lg">Узнать больше о F#</a>
             </p>
           </div>
-          <div class="col-sm-4">
-            <img src="img/anime.png" width="245px" style="margin-bottom: -48px" />
+          <div class="col-sm-5">
+            <img src="img/fmock.png" style="width: 100%; margin-top: 31px;" />
           </div>
         </div>
       </div>
@@ -76,17 +76,17 @@
     <div class="dark-background">
       <div class="container content-width">
         <h1 class="light margin-top">
-        Why use F#?
+        Почему F#?
         </h1>
-        <div class="row margin-top">
+        <div class="row margin-top margin-bottom">
           <div class="col-sm-3 text-center">
             <div class="panel panel-default">
               <div class="panel-body">
                 <i class="fa fa-television icon-image" aria-hidden="true"></i>
               </div>
               <div class="panel-footer text-left">
-                <p class="b">Cross-platform</p>
-                F# runs on Linux, Mac OS X, Android, iOS, Windows, GPUs, and browsers.
+                <p class="b">Кросплатформенность</p>
+                F# работает на Linux, OS X, iOS, Windows, Android, а также в браузерах.
               </div>
             </div>
           </div>
@@ -96,8 +96,8 @@
                 <i class="fa fa-github-alt icon-image" aria-hidden="true"></i>
               </div>
               <div class="panel-footer text-left">
-                <p class="b">Open-source</p>
-                It is free to use and is open source under an OSI-approved license.
+                <p class="b">Открытость</p>
+                F# является бесплатным проектом с открытым исходным кодом.
               </div>
             </div>
           </div>
@@ -107,8 +107,8 @@
                 <i class="fa fa-user-secret icon-image" aria-hidden="true"></i>
               </div>
               <div class="panel-footer text-left">
-                <p class="b">Active development</p>
-                F# is supported by both an active open community and industry-leading companies providing professional tools.
+                <p class="b">Активная разработка</p>
+                F# поддерживают как активное сообщество разработчиков, так и большие корпорации.
               </div>
             </div>
           </div>
@@ -118,8 +118,8 @@
                 <i class="fa fa-fighter-jet icon-image" aria-hidden="true"></i>
               </div>
               <div class="panel-footer text-left">
-                <p class="b">Write less - do more</p>
-                Choose F# and greatly increase your productivity!
+                <p class="b">Write less — do more</p>
+                Выбери F# и увеличь свою производительность!
               </div>
             </div>
           </div>
@@ -128,16 +128,28 @@
     </div>
     <div>
       <div class="container content-width">
-        <h1 class="margin-top">
-        What does it look like?
+        <h1 class="margin-top text-center">
+          Как это выглядит?
         </h1>
-        <pre class="margin-top">
-          <code class="fsharp code-holder">// Gets factorial
-let rec fib n a b =
-match n with
-| 0 -> a
-| 1 -> b
-| _ -> fib (n - 1) b (a + b)</code></pre>
+        <h4 class="text-center" style="margin-top: -10px">
+          Лаконичный и понятный синтаксис. 
+        </h4>
+        <pre class="margin-top managed-code-block"><code class="fsharp code-holder">    let rec fib n a b =
+        match n with
+        | 0 -> a
+        | 1 -> b
+        | _ -> fib (n - 1) b (a + b)
+        </code></pre>
+      </div>
+    </div>
+    <div class="light dark-background">
+      <div class="container">
+        <h1 class="margin-top text-center">
+          Сообщество
+        </h1>
+        <p>
+        :)
+        </p>
       </div>
     </div>
   </body>
