@@ -61,6 +61,7 @@
 .b {
   font-weight: bold;
   margin-top: 3px;
+  text-transform: uppercase;
 }
 .managed-code-block, .managed-code-block code {
   font-size: 40px;
@@ -68,7 +69,11 @@
   background: transparent!important;
 }
 .margin-bottom {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
+}
+.custom-tabs > li {
+  display: inline-block!important;
+  float: none;
 }
 code {
   margin-top: -20px;
