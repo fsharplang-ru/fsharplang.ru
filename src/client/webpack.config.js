@@ -12,7 +12,7 @@ var babelOptions = {
 
 module.exports = {
   devtool: "source-map",
-  entry: resolve('./tmp.fsproj'),
+  entry: resolve('./client.fsproj'),
   output: {
     filename: 'bundle.js',
     path: resolve('./public'),

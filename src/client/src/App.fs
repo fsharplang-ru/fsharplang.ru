@@ -1,4 +1,4 @@
-module Fsharplang_ru.Client
+module FSharplang_ru.Client
 
 open Fable.Core
 open Fable.Core.JsInterop

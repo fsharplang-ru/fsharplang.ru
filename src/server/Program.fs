@@ -77,6 +77,7 @@ let configureApp (app : IApplicationBuilder) =
     
 
 let configureServices (services : IServiceCollection) =
+    //на самом деле, если мы не используем Razor, то нам это пока не нужно
     let sp  = services.BuildServiceProvider()
     let env = sp.GetService<IHostingEnvironment>()
     let viewsFolderPath = Path.Combine(env.ContentRootPath, "Views")
