@@ -14,7 +14,8 @@
     "babel-runtime": "^6.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "remotedev": "^0.2.7"
+    "remotedev": "^0.2.7",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

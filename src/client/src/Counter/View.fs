@@ -21,7 +21,7 @@ let root model dispatch =
         [ ClassName "column is-narrow"
           Style
             [ CSSProp.Width "170px" ] ]
-        [ str (sprintf "Counter value: %i" model) ]
+        [ str (sprintf "Counter Value: %i" model) ]
       simpleButton "+1" Increment dispatch
       simpleButton "-1" Decrement dispatch
       simpleButton "Reset" Reset dispatch
