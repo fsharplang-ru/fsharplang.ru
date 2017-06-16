@@ -23,7 +23,7 @@
     <Compile Include="src/App.fs" />
   </ItemGroup>
    <ItemGroup>
-      <PackageReference Include="Fable.Core" Version="1.0.4" />
+      <PackageReference Include="Fable.Core" Version="1.1.0" />
       <PackageReference Include="Fable.Elmish" Version="0.9.0-*" />
       <PackageReference Include="Fable.Elmish.React" Version="0.9.0-*" />
       <PackageReference Include="Fable.Elmish.Browser" Version="0.9.0-*" />
