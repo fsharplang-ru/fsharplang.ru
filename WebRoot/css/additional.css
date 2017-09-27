@@ -1,0 +1,149 @@
+.content-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.inline-block {
+  display: inline-block!important;
+}
+.logo {
+  margin-top: -12px;
+  margin-bottom: -6px;
+  margin-right: 6px;
+  width: 42px;
+  height: 42px;
+}
+.front-bgr {
+  background-image: url(../img/mock.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 65px 0;
+}
+.front-bgr .shadowed {
+  text-shadow: 0 3px 6px rgba(0,0,0,.2);
+}
+.light {
+  color: white;
+}
+.floating-logo {
+  text-align: right;
+}
+.floating-logo > img {
+  width: 200px;
+  height: 200px;
+  float: right;
+  position: absolute;
+  right: 200px;
+  margin-top: -100px;
+}
+.code {
+  text-shadow: none!important;
+}
+.code-holder {
+  border-radius: 3px;
+  font-size: 16px;
+}
+.text-center {
+  text-align: center;
+  line-height: 1.5em;
+}
+.text-left {
+  text-align: left;
+  line-height: 1.5em;
+}
+.icon-image {
+  margin: 20px;
+  font-size: 80px;
+  color: #378bba;
+}
+.margin-top {
+  margin-top: 31px;
+}
+p.b {
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.managed-code-block, .managed-code-block code {
+  font-size: 40px;
+  border: none;
+  background: transparent!important;
+}
+.margin-bottom {
+  margin-bottom: 30px;
+}
+.custom-tabs > li {
+  display: inline-block!important;
+  float: none;
+}
+code {
+  padding: 0px!important;
+}
+#monaco-container {
+  width: 100%;
+  height: 350px;
+}
+p.secondary-title {
+  font-size: 20px!important;
+  color: #dedede;
+}
+div.footer {
+  background-image: url(../img/footer-back.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+section.darkest-background {
+  background-color: #2d3947;
+}
+section.blue-background {
+  background-color: #378bba;
+}
+section.dark-background {
+  background-color: #ecf0f1;/*previously was #2d3947*/
+}
+section.dark-background, section.blue-background, section.darkest-background {
+  box-shadow: inset 0 10px 30px -10px rgba(0,0,0,.05), 
+              inset 0 -10px 30px -10px rgba(0,0,0,.05);
+}
+.gray {
+  color: white;
+  font-weight: 200;
+  font-size: 21px;
+}
+p.note {
+  font-size: 15px;
+  line-height: 1.7em;
+}
+img.logo-note {
+  width: 114px;
+  height: 114px;
+  margin: 10px 0;
+}
+body {
+  margin-top: 60px;
+}
+p.rights {
+  font-size: 14px;
+  color: rgba(255,255,255,.5);
+}
+
+@media (max-width: 700px) {
+  img.logo-note {
+    display: none;
+  }
+  .managed-code-block, .managed-code-block code  {
+    font-size: 17px!important
+  }
+  .nav-tabs > li {
+    float: none;
+  }
+  .navbar-brand {
+    width: 80%;
+    float: left;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+  }
+}
