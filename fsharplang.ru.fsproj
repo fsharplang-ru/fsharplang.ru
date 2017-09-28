@@ -5,8 +5,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="XmlViewEngineHelpers.fs" />
     <Compile Include="Models/*.fs" />
     <Compile Include="Views/Navigation.fs" />
+    <Compile Include="Views/Jumbotron.fs" />
+    <Compile Include="Views/SourceCodeExamples.fs" />
+    <Compile Include="Views/WhyFsharp.fs" />
+    <Compile Include="Views/TryOnline.fs" />
+    <Compile Include="Views/Videos.fs" />
+    <Compile Include="Views/Scripts.fs" />
+    <Compile Include="Views/Footer.fs" />
     <Compile Include="Views/Layout.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

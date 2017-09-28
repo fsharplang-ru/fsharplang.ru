@@ -1,10 +1,7 @@
 module Fsharplangru.Views.Navigation
 open Giraffe.XmlViewEngine
-let class' = attr "class"
-let type' = attr "type"
-let dataToggle = attr "data-toggle"
-let dataTarget = attr "data-target" 
-let href = attr "href"
+open Helpers
+
 let section = 
     nav [ class'  "navbar navbar-default navbar-fixed-top"] [
         div [ class' "container-fluid content-width" ] [
@@ -21,6 +18,32 @@ let section =
                     encodedText "Русскоязычное сообщество F#"
                  ]
              ]
-            div  [] []
+            div  [ class' "collapse navbar-collapse" ; id' "bs-example-navbar-collapse-1" ] [
+                ul [ class' "nav navbar-nav navbar-right" ] (
+                    [for (h,t) in [ ("#code-snippets", "Примеры кода") 
+                                    ("#top-reasons", "Почему F#") 
+                                    ("#online-compiler", "Компилятор онлайн")
+                                    ("#video-lessons","Уроки") ] -> li [] [ a [ href h] [ encodedText t ]   ]          
+                    ] @ [
+                        li [ class' "dropdown" ] [
+                            a [ href  "#"
+                                class' "dropdown-toggle"
+                                dataToggle "dropdown" 
+                                role "button"
+                                attr "aria-expanded" "false"
+                                ] [
+                                    encodedText "Сообщество"
+                                    span [ class' "caret" ] []
+                                ]
+                            [
+                                "https://gitter.im/fsharplang_ru/Lobby", "Чат в Gitter"
+                                "https://t.me/fsharp_chat", "Чат в Telegram"
+                                "https://github.com/fsharplang-ru", "Мы на GitHub"
+                                "http://fsharp.org/","Официальный сайт F#"
+                            ] |> createListOfLinks aBlank 
+                            |> ul [ class' "dropdown-menu"; role "menu"] 
+                        ] 
+                 ])
+             ]
          ] 
      ]

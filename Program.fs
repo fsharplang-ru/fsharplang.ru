@@ -22,6 +22,14 @@ open Fsharplangru.Views
 let indexPage = 
    [ 
        Navigation.section
+       Jumbotron.sectionImage
+       Jumbotron.sectionWithLogo
+       SourceCodeExamples.section
+       WhyFsharp.section
+       TryOnline.section
+       Videos.section
+       Footer.section
+       Scripts.code
    ] 
    |> Layout.page "F#: Русскоязычное сообщество" 
 
