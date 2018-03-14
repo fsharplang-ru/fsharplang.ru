@@ -5,6 +5,14 @@
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "inferno": "^3.9.0",
+    "inferno-component": "^3.9.0",
+    "inferno-create-element": "^3.9.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
