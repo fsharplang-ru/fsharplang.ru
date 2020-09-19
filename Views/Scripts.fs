@@ -68,7 +68,7 @@ let private src = """
                 };
 
                 const program = window.editor.getValue();
-                const url = 'http://rextester.com/rundotnet/api';
+                const url = 'https://rextester.com/rundotnet/api';
                 const fsharp = 3; // in rextester encoding
                 const params = {
                     LanguageChoice: fsharp,
