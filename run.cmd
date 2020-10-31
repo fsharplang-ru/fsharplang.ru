@@ -1,6 +1,8 @@
 @echo off
 
-call npm install
+call npm install 
 cd src
+dotnet tool restore
 dotnet restore
-dotnet fable npm-start
+cd ../
+npm start

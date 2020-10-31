@@ -1,13 +1,12 @@
-module FSharpLangRu.Components
+﻿module FSharpLangRu.Components
 
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
-open Fable.Import.Browser
-open Fable
+open Browser
+open Browser.Types
+open Fable.React
+open Fable.React.Props
 
 type private CSSProp = 
     | BoxShadow of obj
-    interface ICSSProp
           
 let row elements =
     let column = sprintf "col-lg-%i" <| 12 / Seq.length elements
@@ -18,14 +17,14 @@ let row elements =
 let card title description icon =
     let icon = sprintf "icon-image text-primary fa fa-%s" icon
     div [ ClassName "card text-center rounded mt-3 border-light"
-          Style [ BoxShadow "0 1px 1px rgba(0, 0, 0, 0.05)" ] ] [
+          Style [ Fable.React.Props.BoxShadow "0 1px 1px rgba(0, 0, 0, 0.05)" ] ] [
         div [ Style [ FontSize "90px" ] ] [ i [ ClassName icon ] [] ]
         div [ ClassName "card-body pt-0" ] [
             div [ ClassName "card-title text-uppercase mb-1" ] [ b [] [ str title ] ]
             p [ ClassName "card-text" ] [ str description ] ] ]
 
 let layout color shadow title subtitle nested =
-    div [ Style [ BoxShadow shadow; BackgroundColor color ] ] [
+    div [ Style [ Fable.React.Props.BoxShadow shadow; BackgroundColor color ] ] [
         div [ ClassName "container pb-5 pt-3" ] [
             h1 [ ClassName "mt-3 mb-2 ml-3" ] [ 
                 str title 
@@ -55,7 +54,8 @@ let code samples =
             yield div [ ClassName "tab-pane fade" 
                         Id identity ] [ str code ] ] ]
     
-let lightLayout = layout "#ffffff" ""
+let lightLayout title subtitle = layout "#ffffff" "" title subtitle
                         
-let darkLayout = layout "#f9f9f9" "inset 0 10px 30px -10px rgba(0, 0, 0, .05), 
-                                   inset 0 -10px 30px -10px rgba(0, 0, 0, .05)"
+let darkLayout title subtitle = layout "#f9f9f9" "inset 0 10px 30px -10px rgba(0, 0, 0, .05), 
+                                   inset 0 -10px 30px -10px rgba(0, 0, 0, .05)" title subtitle
+                                   
