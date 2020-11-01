@@ -21,7 +21,7 @@ let card title description icon =
             p [ ClassName "card-text" ] [ str description ] ] ]
 
 let layout color shadow title subtitle nested =
-    div [ Style [ Fable.React.Props.BoxShadow shadow; BackgroundColor color ] ] [
+    div [ Style [ BoxShadow shadow; BackgroundColor color ] ] [
         div [ ClassName "container pb-5 pt-3" ] [
             h1 [ ClassName "mt-3 mb-2 ml-3" ] [ 
                 str title 
