@@ -1,8 +1,5 @@
 module FSharpLangRu.App
-
-open Fable.Core
-open Fable.Core.JsInterop
-open Fable.Helpers.React
+open Fable.React
 open Components
 open Elmish.React
 open Elmish
@@ -29,6 +26,6 @@ let update message count =
     count + 1
 
 Program.mkSimple init update view
-|> Program.withReact "elmish-app"
+|> Program.withReactBatched "elmish-app"
 |> Program.withConsoleTrace
-|> Program.run 
+|> Program.run

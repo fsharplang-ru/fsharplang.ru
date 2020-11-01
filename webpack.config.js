@@ -6,19 +6,19 @@ function resolve(filePath) {
   return path.join(__dirname, filePath)
 }
 
-var babelOptions = fableUtils.resolveBabelOptions({
+var babelOptions = {
   presets: [
-    ["env", {
-      "targets": {
-        "browsers": "> 1%"
-      },
-      "modules": false
-    }]
-  ],
-});
-
-var isProduction = process.argv.indexOf("-p") >= 0;
-console.log("Bundling for " + (isProduction ? "production" : "development") + "...");
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "> 1%"
+        },
+		 "modules": false
+      }
+    ]
+  ]
+};
 
 module.exports = {
   devtool: "source-map",
@@ -39,11 +39,7 @@ module.exports = {
       {
         test: /\.fs(x|proj)?$/,
         use: {
-          loader: "fable-loader",
-          options: {
-            babel: babelOptions,
-            define: isProduction ? [] : ["DEBUG"]
-          }
+          loader: "fable-loader"
         }
       },
       {
@@ -51,8 +47,8 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: babelOptions
-        },
+		  options: babelOptions
+        }
       }
     ]
   }

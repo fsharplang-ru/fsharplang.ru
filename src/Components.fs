@@ -1,13 +1,9 @@
-module FSharpLangRu.Components
+﻿module FSharpLangRu.Components
 
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
-open Fable.Import.Browser
-open Fable
-
-type private CSSProp = 
-    | BoxShadow of obj
-    interface ICSSProp
+open Browser
+open Browser.Types
+open Fable.React
+open Fable.React.Props
           
 let row elements =
     let column = sprintf "col-lg-%i" <| 12 / Seq.length elements
@@ -55,7 +51,8 @@ let code samples =
             yield div [ ClassName "tab-pane fade" 
                         Id identity ] [ str code ] ] ]
     
-let lightLayout = layout "#ffffff" ""
+let lightLayout title subtitle = layout "#ffffff" "" title subtitle
                         
-let darkLayout = layout "#f9f9f9" "inset 0 10px 30px -10px rgba(0, 0, 0, .05), 
-                                   inset 0 -10px 30px -10px rgba(0, 0, 0, .05)"
+let darkLayout title subtitle = layout "#f9f9f9" "inset 0 10px 30px -10px rgba(0, 0, 0, .05), 
+                                   inset 0 -10px 30px -10px rgba(0, 0, 0, .05)" title subtitle
+                                   
