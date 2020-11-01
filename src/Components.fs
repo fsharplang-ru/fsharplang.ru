@@ -4,9 +4,6 @@ open Browser
 open Browser.Types
 open Fable.React
 open Fable.React.Props
-
-type private CSSProp = 
-    | BoxShadow of obj
           
 let row elements =
     let column = sprintf "col-lg-%i" <| 12 / Seq.length elements
@@ -17,7 +14,7 @@ let row elements =
 let card title description icon =
     let icon = sprintf "icon-image text-primary fa fa-%s" icon
     div [ ClassName "card text-center rounded mt-3 border-light"
-          Style [ Fable.React.Props.BoxShadow "0 1px 1px rgba(0, 0, 0, 0.05)" ] ] [
+          Style [ BoxShadow "0 1px 1px rgba(0, 0, 0, 0.05)" ] ] [
         div [ Style [ FontSize "90px" ] ] [ i [ ClassName icon ] [] ]
         div [ ClassName "card-body pt-0" ] [
             div [ ClassName "card-title text-uppercase mb-1" ] [ b [] [ str title ] ]
